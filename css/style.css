@@ -1,0 +1,328 @@
+*
+{
+ margin: 0;
+	padding: 0;
+}
+body
+{
+	overflow: hidden;
+}
+.home
+{
+	
+	height:500px;
+	
+	
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+.home .aabout
+{
+
+
+
+	text-align: center;
+	
+	color: white;
+}
+.home .aabout span
+{
+	color: yellow;
+	font-size: 60px;
+	
+}
+.home .aabout button
+{
+	border: 2px solid yellow ;
+	padding:10px 30px;
+	border-radius:5px;
+	background-color: transparent;
+	font-size: 20px;
+	font-family: 'Oswald', sans-serif;
+
+}
+
+.home .aabout button a
+{
+	text-decoration: none;	
+	font-size: border;
+	color: yellow;
+
+}
+.home .aabout button:hover  {
+	background-color: yellow;
+	color: transparent;	
+}
+.home .aabout button:hover a  {
+	color: rgb(33,36,50);
+    font-weight: bold;
+}
+
+.test:after
+{
+	content:"|";
+	animation-name: typing;
+	animation-duration: 4s;
+	animation-iteration-count: infinite;
+}
+@keyframes typing
+{
+	0%{content:"S|" }
+	25%{content:"Sob|" }
+	50%{content:"Sob|" }
+	75%{content:"Sobk|" }
+   100%{content:"Sobky|" }
+}
+
+
+canvas 
+{
+    position: absolute;
+    height: 500px;
+    width: 100%;
+    z-index: -1;
+    color:#09c;
+}
+
+.about
+{
+	width: 100%;
+
+
+}
+.test1
+{
+	position: relative;
+}
+.test1:after
+{
+	content: "";
+	position: absolute;
+	top: 50px;
+	right: 70px;
+	width: 50%;
+	height: 5%;
+	background-color: black;
+}
+.about .box {
+    padding: 1.5rem 0;
+    color: #faed26;
+    border-radius: 10px;
+    margin-bottom: 1rem;
+	background-color: black;
+}
+.my-img img
+{
+	border-radius: 500px;
+	width: 50%;
+	
+}
+.about .skills .progress {
+    margin: 1rem 0;
+    height: 30px;
+    position: relative;
+    border-radius: 0 !important;
+}
+.about .skills span.progress-name {
+    display: block;
+    background-color: #46344e;
+    font-size: 13px;
+    font-weight: 600;
+    text-transform: uppercase;
+    height: 100%;
+    line-height: 30px;
+    color: #faed26;
+    position: absolute;
+    z-index: 2;
+    left: 0;
+    padding: 0 0.5rem;
+}
+.about .about-me .my-resume .main-button {
+    /* color: #46344e; */
+    border-color: #46344e;
+    border-width: 2px;
+}
+#projects .contbox
+{
+	
+	height: 250px;
+	background-size: cover;
+	position: relative;
+	overflow: hidden;
+	border-radius: 5px;
+}
+.overlay
+{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	background-color: rgba(33, 36, 50, 0.2);
+}
+.contentbox
+{
+	position: absolute;
+    background-color: #212432;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	left: 0;
+	bottom: -250px;
+	transition: all 1s ease-in;
+	color: #f8f9fa!important;
+	text-align: center;
+}
+#projects .contbox:hover .contentbox
+{
+	
+	bottom: 0px;
+}
+.main-button
+{
+	background-color: #faed26;
+	font-weight: bold;
+}
+.contbox img
+{
+	height: 100%;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+    color: BLACK;
+    border: 1px solid black;
+	font-size: 20;
+	background-color: none;
+}
+.nav-pills .nav-link.active, .nav-pills .show>.nav-link {
+	background-color: #faed26;
+}
+.nv a
+{
+	font-size: 20px;
+	color: black;
+	border: 1px solid black;
+	margin-left: 10px;
+}
+.pro-content h2
+{
+	position: relative;
+}
+.pro-content h2::before 
+{
+	content: '';
+	position: absolute;
+	width: 8rem;
+	height: 2px;
+	background-color: black;
+	bottom: -15px;
+}
+.sctop
+{
+	position: fixed;
+	right: 40px;
+	bottom: 40px;
+	cursor: pointer;
+}
+
+.loading
+{
+	position: fixed;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 999999999;
+	background-color: #212432;
+}
+.loading .container{
+	display:flex;
+	align-items:center;
+	justify-content:center;
+	background-color: #212432;	
+	width:75%;
+	padding:10%;
+	flex-wrap:wrap;
+  }
+.loader{
+	width:100px;
+	height:100px;
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	margin:10px 20px;
+	padding-top: 150px;
+  }
+  @keyframes load10{
+	50%{
+	  transform:rotatez(180deg);
+	  border-style:dashed;
+	  border-color:red maroon indianred orangered;
+	}
+	100%{
+	  transform:rotatez(360deg);
+	}
+  }
+  .loader10::before{
+	content:"";
+	color:white;
+	height:100px;
+	width:100px;
+	background:transparent;
+	border-radius:50%;
+	border:20px solid red;
+	animation:load10 1s infinite;
+  }  
+#contact
+{
+	background-color: #212432;
+}
+.content-header h2
+{
+	color: #fff;
+	text-transform: uppercase;
+    position: relative;
+
+
+}
+.content-header h2::before
+{
+	content: '';
+	width: 9rem;
+	height: 4px;
+	background-color: #fff;
+	position: absolute;
+	bottom: -20px;
+}
+
+.content-form p 
+{
+	color: #faed26;
+}
+input
+{
+	margin-bottom: 20px;
+}
+.content-form span
+{
+	color: #faed26;
+}
+
+.navbar-dark .navbar-nav .nav-link {
+    
+	font-size: 1.2rem;
+	transition: 1s all ease-in;
+	
+}
+
+.acolor
+{
+color: #faed26 !important;
+}
+.navbar-dark .navbar-nav .nav-link:hover 
+{
+  border-bottom:1px solid  rgba(255,255,255,.5); ;
+}
